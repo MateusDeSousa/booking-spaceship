@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,14 +11,14 @@
 		85A66FCE2597734400AD7B93 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85A66FCC2597734400AD7B93 /* Interface.storyboard */; };
 		85A66FD02597734500AD7B93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85A66FCF2597734500AD7B93 /* Assets.xcassets */; };
 		85A66FD72597734500AD7B93 /* booking-spaceship WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 85A66FD62597734500AD7B93 /* booking-spaceship WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		85A66FDC2597734500AD7B93 /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A66FDB2597734500AD7B93 /* HostingController.swift */; };
-		85A66FDE2597734500AD7B93 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A66FDD2597734500AD7B93 /* ContentView.swift */; };
 		85A66FE02597734500AD7B93 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A66FDF2597734500AD7B93 /* ExtensionDelegate.swift */; };
 		85A66FE22597734500AD7B93 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A66FE12597734500AD7B93 /* NotificationController.swift */; };
 		85A66FE42597734500AD7B93 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A66FE32597734500AD7B93 /* NotificationView.swift */; };
 		85A66FE62597734500AD7B93 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A66FE52597734500AD7B93 /* ComplicationController.swift */; };
 		85A66FE82597734500AD7B93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85A66FE72597734500AD7B93 /* Assets.xcassets */; };
 		85A66FEB2597734500AD7B93 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85A66FEA2597734500AD7B93 /* Preview Assets.xcassets */; };
+		85F181FF2597819B00F1C83A /* uMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 85F181FE2597819B00F1C83A /* uMapKit */; };
+		85F1820425978C2700F1C83A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F1820325978C2700F1C83A /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,8 +70,6 @@
 		85A66FCF2597734500AD7B93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		85A66FD12597734500AD7B93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85A66FD62597734500AD7B93 /* booking-spaceship WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "booking-spaceship WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		85A66FDB2597734500AD7B93 /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
-		85A66FDD2597734500AD7B93 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		85A66FDF2597734500AD7B93 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		85A66FE12597734500AD7B93 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		85A66FE32597734500AD7B93 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
@@ -80,6 +78,7 @@
 		85A66FEA2597734500AD7B93 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		85A66FEC2597734500AD7B93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85A66FED2597734500AD7B93 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		85F1820325978C2700F1C83A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85F181FF2597819B00F1C83A /* uMapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +99,7 @@
 				85A66FCB2597734400AD7B93 /* booking-spaceship WatchKit App */,
 				85A66FDA2597734500AD7B93 /* booking-spaceship WatchKit Extension */,
 				85A66FC42597734300AD7B93 /* Products */,
+				85F181FD2597819B00F1C83A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,8 +126,7 @@
 		85A66FDA2597734500AD7B93 /* booking-spaceship WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				85A66FDB2597734500AD7B93 /* HostingController.swift */,
-				85A66FDD2597734500AD7B93 /* ContentView.swift */,
+				85F1820325978C2700F1C83A /* AppDelegate.swift */,
 				85A66FDF2597734500AD7B93 /* ExtensionDelegate.swift */,
 				85A66FE12597734500AD7B93 /* NotificationController.swift */,
 				85A66FE32597734500AD7B93 /* NotificationView.swift */,
@@ -145,6 +145,13 @@
 				85A66FEA2597734500AD7B93 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		85F181FD2597819B00F1C83A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,6 +204,9 @@
 			dependencies = (
 			);
 			name = "booking-spaceship WatchKit Extension";
+			packageProductDependencies = (
+				85F181FE2597819B00F1C83A /* uMapKit */,
+			);
 			productName = "booking-spaceship WatchKit Extension";
 			productReference = 85A66FD62597734500AD7B93 /* booking-spaceship WatchKit Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
@@ -274,10 +284,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85A66FDE2597734500AD7B93 /* ContentView.swift in Sources */,
-				85A66FDC2597734500AD7B93 /* HostingController.swift in Sources */,
 				85A66FE22597734500AD7B93 /* NotificationController.swift in Sources */,
 				85A66FE02597734500AD7B93 /* ExtensionDelegate.swift in Sources */,
+				85F1820425978C2700F1C83A /* AppDelegate.swift in Sources */,
 				85A66FE42597734500AD7B93 /* NotificationView.swift in Sources */,
 				85A66FE62597734500AD7B93 /* ComplicationController.swift in Sources */,
 			);
@@ -518,7 +527,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3T7W6T7535;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "mateussousa.booking-spaceship";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -531,7 +540,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3T7W6T7535;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "mateussousa.booking-spaceship";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -578,6 +587,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		85F181FE2597819B00F1C83A /* uMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = uMapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 85A66FBD2597734300AD7B93 /* Project object */;
 }
