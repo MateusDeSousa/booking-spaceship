@@ -13,7 +13,7 @@ import uMapKit
 struct AppDelegate: App {
     @SceneBuilder var body: some Scene {
         WindowGroup {
-            MapView()
+            MainView()
             .edgesIgnoringSafeArea(.all)
         }
 

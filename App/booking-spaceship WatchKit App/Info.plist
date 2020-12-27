@@ -27,5 +27,9 @@
 	</array>
 	<key>WKWatchKitApp</key>
 	<true/>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>We need location access to determine your location</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>We need location access to determine your location</string>
 </dict>
 </plist>
