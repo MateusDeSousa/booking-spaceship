@@ -30,11 +30,11 @@ public struct MainView: View {
             }
         }.onAppear() {
             viewModel.requestAuthorization()
-        }
+        }.ignoresSafeArea()
     }
     
     private func MapView() -> some View {
-        Map(coordinateRegion: Binding<MKCoordinateRegion>.constant(viewModel.location))
+        Map(coordinateRegion: Binding<MKCoordinateRegion>.constant(viewModel.location), showsUserLocation: true)
     }
     
     private func AvatarView() -> some View {

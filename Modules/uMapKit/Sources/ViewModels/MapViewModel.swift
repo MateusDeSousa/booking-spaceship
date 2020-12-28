@@ -15,7 +15,7 @@ class MapViewModel: NSObject, ObservableObject {
     private let locationManager = CLLocationManager()
     private var userLocation = MKCoordinateRegion()
     @Published var location = MKCoordinateRegion()
-    @Published var places = [Place]()
+//    @Published var places = [Place]()
     
     
     func requestAuthorization() {
@@ -32,20 +32,10 @@ class MapViewModel: NSObject, ObservableObject {
         location = userLocation
     }
     
-    func setPinUserLocation() -> [Place] {
-        let positionUser = Place(name: "userLocation", latitude: userLocation.center.latitude, longitude: userLocation.center.longitude)
-        return [positionUser]
-    }
-}
-
-struct Place: Identifiable {
-    var id = UUID()
-    let name: String
-    let latitude: Double
-    let longitude: Double
-    var coordinate: CLLocationCoordinate2D {
-        CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
-    }
+//    func setPinUserLocation() -> [MapMarker] {
+//        let positionUser = Place(name: "userLocation", latitude: userLocation.center.latitude, longitude: userLocation.center.longitude)
+//        return [positionUser]
+//    }
 }
 
 extension MapViewModel: CLLocationManagerDelegate {
