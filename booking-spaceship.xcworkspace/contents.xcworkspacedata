@@ -11,6 +11,6 @@
       location = "group:Modules/uCore">
    </FileRef>
    <FileRef
-      location = "group:/Users/mateussousa/Developer/Study/booking-spaceship/Modules/uCore/uNetwork">
+      location = "group:Modules/uNetwork">
    </FileRef>
 </Workspace>
