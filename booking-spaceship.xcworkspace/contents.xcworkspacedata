@@ -10,4 +10,7 @@
    <FileRef
       location = "group:Modules/uCore">
    </FileRef>
+   <FileRef
+      location = "group:/Users/mateussousa/Developer/Study/booking-spaceship/Modules/uCore/uNetwork">
+   </FileRef>
 </Workspace>

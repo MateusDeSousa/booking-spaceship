@@ -14,7 +14,6 @@ struct AppDelegate: App {
     @SceneBuilder var body: some Scene {
         WindowGroup {
             MainView()
-            .edgesIgnoringSafeArea(.all)
         }
 
         WKNotificationScene(controller: NotificationController.self, category: "myCategory")

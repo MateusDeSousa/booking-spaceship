@@ -1,4 +1,6 @@
 booking-spaceship.xcodeproj/project.xcworkspace/xcuserdata
 booking-spaceship.xcworkspace/xcuserdata
+App/booking-spaceship.xcodeproj/xcuserdata/
 Modules/uCore/.swiftpm
 Modules/uMapKit/.swiftpm
+Modules/uCore/uNetwork/.swiftpm/

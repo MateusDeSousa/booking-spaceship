@@ -15,13 +15,15 @@ let package = Package(
             targets: ["uMapKit"]),
     ],
     dependencies: [
-        .package(path: "Modules/uCore")
+        .package(path: "Modules/uCore"),
+        .package(path: "Modukes/uNetwork")
     ],
     targets: [
         .target(
             name: "uMapKit",
             dependencies: [
-                .product(name: "uCore", package: "uCore")
+                .product(name: "uCore", package: "uCore"),
+                .product(name: "uNetwork", package: "uNetwork")
             ],
             path: "Sources"),
         .testTarget(
