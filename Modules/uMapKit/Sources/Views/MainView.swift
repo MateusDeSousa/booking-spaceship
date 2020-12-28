@@ -30,11 +30,17 @@ public struct MainView: View {
             }
         }.onAppear() {
             viewModel.requestAuthorization()
+            viewModel.findAvailableCars()
         }.ignoresSafeArea()
     }
     
     private func MapView() -> some View {
-        Map(coordinateRegion: Binding<MKCoordinateRegion>.constant(viewModel.location), showsUserLocation: true)
+        Map(coordinateRegion: Binding<MKCoordinateRegion>.constant(viewModel.location), showsUserLocation: true, annotationItems: viewModel.availableCars) { item in
+            MapAnnotation(coordinate: CLLocationCoordinate2D(latitude: item.latitude, longitude: item.longitude)) {
+                Circle()
+                    .foregroundColor(.orangeColor)
+            }
+        }
     }
     
     private func AvatarView() -> some View {

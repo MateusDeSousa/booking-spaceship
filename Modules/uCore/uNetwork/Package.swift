@@ -20,7 +20,8 @@ let package = Package(
     targets: [
         .target(
             name: "uNetwork",
-            dependencies: []),
+            dependencies: [],
+            path: "Sources"),
         .testTarget(
             name: "uNetworkTests",
             dependencies: ["uNetwork"]),
