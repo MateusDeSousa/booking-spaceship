@@ -5,6 +5,9 @@
       location = "container:App/booking-spaceship.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:Modules/uAuthKit">
+   </FileRef>
+   <FileRef
       location = "group:Modules/uMapKit">
    </FileRef>
    <FileRef
