@@ -13,6 +13,6 @@ public struct NetworkManager {
     
     public func getAvailableCars(completion: @escaping (Result<Data, Error>) -> Void) {
         let api = APIRepository()
-        api.getAvailableCars(completion: completion)
+        api.getAvailableCars(completion)
     }
 }

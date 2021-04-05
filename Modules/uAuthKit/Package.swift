@@ -4,6 +4,7 @@ import PackageDescription
 
 let package = Package(
     name: "uAuthKit",
+    defaultLocalization: "en",
     platforms: [
         .watchOS(.v7),
         .iOS(.v14),
@@ -19,7 +20,12 @@ let package = Package(
         .target(
             name: "uAuthKit",
             dependencies: [],
-            path: "Sources"),
+            path: "Sources",
+            resources: [
+                .process("Resources"),
+//                .process("Resources/Localizable", localization: .default)
+            ]
+        ),
         .testTarget(
             name: "uAuthKitTests",
             dependencies: ["uAuthKit"]),

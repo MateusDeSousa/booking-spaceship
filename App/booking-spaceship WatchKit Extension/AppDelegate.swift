@@ -7,13 +7,14 @@
 
 import Foundation
 import SwiftUI
-import uMapKit
+//import uMapKit
+import uAuthKit
 
 @main
 struct AppDelegate: App {
     @SceneBuilder var body: some Scene {
         WindowGroup {
-            MainView()
+            AuthenticationView()
         }
 
         WKNotificationScene(controller: NotificationController.self, category: "myCategory")

@@ -9,6 +9,8 @@ import Foundation
 
 enum APIRepositoryError {
     case urlInvalid
+    case noConnection
+    case generic
 }
 
 extension APIRepositoryError: Error {
@@ -16,6 +18,10 @@ extension APIRepositoryError: Error {
         switch self {
         case .urlInvalid:
             return ""
+        case .noConnection:
+            return "Você parece está sem conexão, verifique e tente novamente."
+        case .generic:
+            return "Error inesperado, tente novamente."
         }
     }
 }

@@ -11,7 +11,7 @@ struct APIRepository {
     
     private let baseURL = "https://5fea30808ede8b0017ff1748.mockapi.io/api/v1"
     
-    public func getAvailableCars(completion: @escaping (Result<Data, Error>) -> Void) {
+    public func getAvailableCars(_ completion: @escaping (Result<Data, Error>) -> Void) {
         let endPoint = "/available-cars"
         
         if let url = URL(string: baseURL + endPoint) {

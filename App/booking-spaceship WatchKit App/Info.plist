@@ -17,9 +17,13 @@
 	<key>CFBundlePackageType</key>
 	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>$(MARKETING_VERSION)</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>We need location access to determine your location</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>We need location access to determine your location</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
@@ -27,9 +31,5 @@
 	</array>
 	<key>WKWatchKitApp</key>
 	<true/>
-	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>We need location access to determine your location</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>We need location access to determine your location</string>
 </dict>
 </plist>
