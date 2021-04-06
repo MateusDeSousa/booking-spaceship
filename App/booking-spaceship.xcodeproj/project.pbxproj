@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		85A66FC82597734400AD7B93 /* booking-spaceship WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 85A66FC72597734400AD7B93 /* booking-spaceship WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		85A66FC82597734400AD7B93 /* WatchOSApp.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 85A66FC72597734400AD7B93 /* WatchOSApp.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		85A66FCE2597734400AD7B93 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85A66FCC2597734400AD7B93 /* Interface.storyboard */; };
 		85A66FD02597734500AD7B93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85A66FCF2597734500AD7B93 /* Assets.xcassets */; };
-		85A66FD72597734500AD7B93 /* booking-spaceship WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 85A66FD62597734500AD7B93 /* booking-spaceship WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		85A66FD72597734500AD7B93 /* WatchOSExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 85A66FD62597734500AD7B93 /* WatchOSExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		85A66FE02597734500AD7B93 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A66FDF2597734500AD7B93 /* ExtensionDelegate.swift */; };
 		85A66FE22597734500AD7B93 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A66FE12597734500AD7B93 /* NotificationController.swift */; };
 		85A66FE42597734500AD7B93 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A66FE32597734500AD7B93 /* NotificationView.swift */; };
@@ -18,6 +18,8 @@
 		85A66FE82597734500AD7B93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85A66FE72597734500AD7B93 /* Assets.xcassets */; };
 		85A66FEB2597734500AD7B93 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85A66FEA2597734500AD7B93 /* Preview Assets.xcassets */; };
 		85B9761C25A5F64800D7490C /* uAuthKit in Frameworks */ = {isa = PBXBuildFile; productRef = 85B9761B25A5F64800D7490C /* uAuthKit */; };
+		85E9A174261B937E0016DCAB /* uCore in Frameworks */ = {isa = PBXBuildFile; productRef = 85E9A173261B937E0016DCAB /* uCore */; };
+		85E9A17B261CC0890016DCAB /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E9A17A261CC0890016DCAB /* AppCoordinator.swift */; };
 		85F181FF2597819B00F1C83A /* uMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 85F181FE2597819B00F1C83A /* uMapKit */; };
 		85F1820425978C2700F1C83A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F1820325978C2700F1C83A /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
@@ -46,7 +48,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				85A66FD72597734500AD7B93 /* booking-spaceship WatchKit Extension.appex in Embed App Extensions */,
+				85A66FD72597734500AD7B93 /* WatchOSExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -57,7 +59,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				85A66FC82597734400AD7B93 /* booking-spaceship WatchKit App.app in Embed Watch Content */,
+				85A66FC82597734400AD7B93 /* WatchOSApp.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,11 +68,11 @@
 
 /* Begin PBXFileReference section */
 		85A66FC32597734300AD7B93 /* booking-spaceship.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "booking-spaceship.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		85A66FC72597734400AD7B93 /* booking-spaceship WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "booking-spaceship WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		85A66FC72597734400AD7B93 /* WatchOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchOSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85A66FCD2597734400AD7B93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		85A66FCF2597734500AD7B93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		85A66FD12597734500AD7B93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		85A66FD62597734500AD7B93 /* booking-spaceship WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "booking-spaceship WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		85A66FD62597734500AD7B93 /* WatchOSExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WatchOSExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		85A66FDF2597734500AD7B93 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		85A66FE12597734500AD7B93 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		85A66FE32597734500AD7B93 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 		85A66FEC2597734500AD7B93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85A66FED2597734500AD7B93 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		85B9762325A5F90300D7490C /* booking-spaceship WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "booking-spaceship WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		85E9A17A261CC0890016DCAB /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		85F1820325978C2700F1C83A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85E9A174261B937E0016DCAB /* uCore in Frameworks */,
 				85F181FF2597819B00F1C83A /* uMapKit in Frameworks */,
 				85B9761C25A5F64800D7490C /* uAuthKit in Frameworks */,
 			);
@@ -99,8 +103,8 @@
 		85A66FBC2597734300AD7B93 = {
 			isa = PBXGroup;
 			children = (
-				85A66FCB2597734400AD7B93 /* booking-spaceship WatchKit App */,
-				85A66FDA2597734500AD7B93 /* booking-spaceship WatchKit Extension */,
+				85A66FCB2597734400AD7B93 /* WatchOSApp */,
+				85A66FDA2597734500AD7B93 /* WatchOSExtension */,
 				85A66FC42597734300AD7B93 /* Products */,
 				85F181FD2597819B00F1C83A /* Frameworks */,
 			);
@@ -110,37 +114,35 @@
 			isa = PBXGroup;
 			children = (
 				85A66FC32597734300AD7B93 /* booking-spaceship.app */,
-				85A66FC72597734400AD7B93 /* booking-spaceship WatchKit App.app */,
-				85A66FD62597734500AD7B93 /* booking-spaceship WatchKit Extension.appex */,
+				85A66FC72597734400AD7B93 /* WatchOSApp.app */,
+				85A66FD62597734500AD7B93 /* WatchOSExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		85A66FCB2597734400AD7B93 /* booking-spaceship WatchKit App */ = {
+		85A66FCB2597734400AD7B93 /* WatchOSApp */ = {
 			isa = PBXGroup;
 			children = (
 				85A66FCC2597734400AD7B93 /* Interface.storyboard */,
 				85A66FCF2597734500AD7B93 /* Assets.xcassets */,
 				85A66FD12597734500AD7B93 /* Info.plist */,
 			);
-			path = "booking-spaceship WatchKit App";
+			path = WatchOSApp;
 			sourceTree = "<group>";
 		};
-		85A66FDA2597734500AD7B93 /* booking-spaceship WatchKit Extension */ = {
+		85A66FDA2597734500AD7B93 /* WatchOSExtension */ = {
 			isa = PBXGroup;
 			children = (
-				85B9762325A5F90300D7490C /* booking-spaceship WatchKit Extension.entitlements */,
+				85E9A19E261CC3E00016DCAB /* Configs */,
+				85E9A195261CC2E40016DCAB /* Complication */,
+				85E9A194261CC2CE0016DCAB /* Notification */,
+				85E9A179261CC06F0016DCAB /* Router */,
 				85F1820325978C2700F1C83A /* AppDelegate.swift */,
 				85A66FDF2597734500AD7B93 /* ExtensionDelegate.swift */,
-				85A66FE12597734500AD7B93 /* NotificationController.swift */,
-				85A66FE32597734500AD7B93 /* NotificationView.swift */,
-				85A66FE52597734500AD7B93 /* ComplicationController.swift */,
 				85A66FE72597734500AD7B93 /* Assets.xcassets */,
-				85A66FEC2597734500AD7B93 /* Info.plist */,
-				85A66FED2597734500AD7B93 /* PushNotificationPayload.apns */,
 				85A66FE92597734500AD7B93 /* Preview Content */,
 			);
-			path = "booking-spaceship WatchKit Extension";
+			path = WatchOSExtension;
 			sourceTree = "<group>";
 		};
 		85A66FE92597734500AD7B93 /* Preview Content */ = {
@@ -149,6 +151,41 @@
 				85A66FEA2597734500AD7B93 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		85E9A179261CC06F0016DCAB /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				85E9A17A261CC0890016DCAB /* AppCoordinator.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		85E9A194261CC2CE0016DCAB /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				85A66FED2597734500AD7B93 /* PushNotificationPayload.apns */,
+				85A66FE12597734500AD7B93 /* NotificationController.swift */,
+				85A66FE32597734500AD7B93 /* NotificationView.swift */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		85E9A195261CC2E40016DCAB /* Complication */ = {
+			isa = PBXGroup;
+			children = (
+				85A66FE52597734500AD7B93 /* ComplicationController.swift */,
+			);
+			path = Complication;
+			sourceTree = "<group>";
+		};
+		85E9A19E261CC3E00016DCAB /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				85A66FEC2597734500AD7B93 /* Info.plist */,
+				85B9762325A5F90300D7490C /* booking-spaceship WatchKit Extension.entitlements */,
+			);
+			path = Configs;
 			sourceTree = "<group>";
 		};
 		85F181FD2597819B00F1C83A /* Frameworks */ = {
@@ -178,9 +215,9 @@
 			productReference = 85A66FC32597734300AD7B93 /* booking-spaceship.app */;
 			productType = "com.apple.product-type.application.watchapp2-container";
 		};
-		85A66FC62597734400AD7B93 /* booking-spaceship WatchKit App */ = {
+		85A66FC62597734400AD7B93 /* WatchOSApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 85A66FF42597734500AD7B93 /* Build configuration list for PBXNativeTarget "booking-spaceship WatchKit App" */;
+			buildConfigurationList = 85A66FF42597734500AD7B93 /* Build configuration list for PBXNativeTarget "WatchOSApp" */;
 			buildPhases = (
 				85A66FC52597734400AD7B93 /* Resources */,
 				85A66FF32597734500AD7B93 /* Embed App Extensions */,
@@ -190,14 +227,14 @@
 			dependencies = (
 				85A66FD92597734500AD7B93 /* PBXTargetDependency */,
 			);
-			name = "booking-spaceship WatchKit App";
+			name = WatchOSApp;
 			productName = "booking-spaceship WatchKit App";
-			productReference = 85A66FC72597734400AD7B93 /* booking-spaceship WatchKit App.app */;
+			productReference = 85A66FC72597734400AD7B93 /* WatchOSApp.app */;
 			productType = "com.apple.product-type.application.watchapp2";
 		};
-		85A66FD52597734500AD7B93 /* booking-spaceship WatchKit Extension */ = {
+		85A66FD52597734500AD7B93 /* WatchOSExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 85A66FF02597734500AD7B93 /* Build configuration list for PBXNativeTarget "booking-spaceship WatchKit Extension" */;
+			buildConfigurationList = 85A66FF02597734500AD7B93 /* Build configuration list for PBXNativeTarget "WatchOSExtension" */;
 			buildPhases = (
 				85A66FD22597734500AD7B93 /* Sources */,
 				85A66FD32597734500AD7B93 /* Frameworks */,
@@ -207,13 +244,14 @@
 			);
 			dependencies = (
 			);
-			name = "booking-spaceship WatchKit Extension";
+			name = WatchOSExtension;
 			packageProductDependencies = (
 				85F181FE2597819B00F1C83A /* uMapKit */,
 				85B9761B25A5F64800D7490C /* uAuthKit */,
+				85E9A173261B937E0016DCAB /* uCore */,
 			);
 			productName = "booking-spaceship WatchKit Extension";
-			productReference = 85A66FD62597734500AD7B93 /* booking-spaceship WatchKit Extension.appex */;
+			productReference = 85A66FD62597734500AD7B93 /* WatchOSExtension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
@@ -222,7 +260,7 @@
 		85A66FBD2597734300AD7B93 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1230;
+				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
 					85A66FC22597734300AD7B93 = {
@@ -250,8 +288,8 @@
 			projectRoot = "";
 			targets = (
 				85A66FC22597734300AD7B93 /* booking-spaceship */,
-				85A66FC62597734400AD7B93 /* booking-spaceship WatchKit App */,
-				85A66FD52597734500AD7B93 /* booking-spaceship WatchKit Extension */,
+				85A66FC62597734400AD7B93 /* WatchOSApp */,
+				85A66FD52597734500AD7B93 /* WatchOSExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -289,6 +327,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85E9A17B261CC0890016DCAB /* AppCoordinator.swift in Sources */,
 				85A66FE22597734500AD7B93 /* NotificationController.swift in Sources */,
 				85A66FE02597734500AD7B93 /* ExtensionDelegate.swift in Sources */,
 				85F1820425978C2700F1C83A /* AppDelegate.swift in Sources */,
@@ -302,12 +341,12 @@
 /* Begin PBXTargetDependency section */
 		85A66FCA2597734400AD7B93 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 85A66FC62597734400AD7B93 /* booking-spaceship WatchKit App */;
+			target = 85A66FC62597734400AD7B93 /* WatchOSApp */;
 			targetProxy = 85A66FC92597734400AD7B93 /* PBXContainerItemProxy */;
 		};
 		85A66FD92597734500AD7B93 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 85A66FD52597734500AD7B93 /* booking-spaceship WatchKit Extension */;
+			target = 85A66FD52597734500AD7B93 /* WatchOSExtension */;
 			targetProxy = 85A66FD82597734500AD7B93 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -442,19 +481,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				CODE_SIGN_ENTITLEMENTS = "booking-spaceship WatchKit Extension/booking-spaceship WatchKit Extension.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "WatchOSExtension/configs/booking-spaceship WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"booking-spaceship WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"WatchOSExtension/Preview Content\"";
 				DEVELOPMENT_TEAM = 3T7W6T7535;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "booking-spaceship WatchKit Extension/Info.plist";
+				INFOPLIST_FILE = WatchOSExtension/Configs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "mateussousa.booking-spaceship.watchkitapp.watchkitextension";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mateussousa.booking-spaceship.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -468,19 +507,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				CODE_SIGN_ENTITLEMENTS = "booking-spaceship WatchKit Extension/booking-spaceship WatchKit Extension.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "WatchOSExtension/configs/booking-spaceship WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"booking-spaceship WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"WatchOSExtension/Preview Content\"";
 				DEVELOPMENT_TEAM = 3T7W6T7535;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "booking-spaceship WatchKit Extension/Info.plist";
+				INFOPLIST_FILE = WatchOSExtension/Configs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "mateussousa.booking-spaceship.watchkitapp.watchkitextension";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mateussousa.booking-spaceship.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -499,9 +538,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3T7W6T7535;
 				IBSC_MODULE = booking_spaceship_WatchKit_Extension;
-				INFOPLIST_FILE = "booking-spaceship WatchKit App/Info.plist";
+				INFOPLIST_FILE = WatchOSApp/Info.plist;
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "mateussousa.booking-spaceship.watchkitapp";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mateussousa.booking-spaceship.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -520,9 +559,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3T7W6T7535;
 				IBSC_MODULE = booking_spaceship_WatchKit_Extension;
-				INFOPLIST_FILE = "booking-spaceship WatchKit App/Info.plist";
+				INFOPLIST_FILE = WatchOSApp/Info.plist;
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "mateussousa.booking-spaceship.watchkitapp";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mateussousa.booking-spaceship.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -539,7 +578,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3T7W6T7535;
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "mateussousa.booking-spaceship";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mateussousa.booking-spaceship";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_BITCODE_FROM_COPIED_FILES = NO;
 				SWIFT_VERSION = 5.0;
@@ -553,7 +592,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3T7W6T7535;
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "mateussousa.booking-spaceship";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mateussousa.booking-spaceship";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_BITCODE_FROM_COPIED_FILES = NO;
 				SWIFT_VERSION = 5.0;
@@ -572,7 +611,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		85A66FF02597734500AD7B93 /* Build configuration list for PBXNativeTarget "booking-spaceship WatchKit Extension" */ = {
+		85A66FF02597734500AD7B93 /* Build configuration list for PBXNativeTarget "WatchOSExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				85A66FF12597734500AD7B93 /* Debug */,
@@ -581,7 +620,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		85A66FF42597734500AD7B93 /* Build configuration list for PBXNativeTarget "booking-spaceship WatchKit App" */ = {
+		85A66FF42597734500AD7B93 /* Build configuration list for PBXNativeTarget "WatchOSApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				85A66FF52597734500AD7B93 /* Debug */,
@@ -605,6 +644,10 @@
 		85B9761B25A5F64800D7490C /* uAuthKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = uAuthKit;
+		};
+		85E9A173261B937E0016DCAB /* uCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = uCore;
 		};
 		85F181FE2597819B00F1C83A /* uMapKit */ = {
 			isa = XCSwiftPackageProductDependency;

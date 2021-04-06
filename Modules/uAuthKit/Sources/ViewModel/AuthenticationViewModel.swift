@@ -22,10 +22,28 @@ class AuthenticationViewModel: ObservableObject {
 extension AuthenticationViewModel: AppleProviderDelegate {
     
     func didComplete(with auth: ASAuthorizationAppleIDCredential) {
+        let authManager = AuthManager()
+        authManager.saveUser(auth)
         
     }
     
     func didComplete(with error: Error) {
         
     }
+}
+
+extension ASAuthorizationAppleIDCredential: UserAuth {
+    
+    public var userName: String? {
+        self.fullName?.nickname
+    }
+    
+    public var userEmail: String? {
+        self.email
+    }
+}
+
+public protocol UserAuth {
+    var userName: String? { get }
+    var userEmail: String? { get }
 }

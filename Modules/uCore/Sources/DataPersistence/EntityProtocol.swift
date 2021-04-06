@@ -10,7 +10,7 @@ import CoreData
 
 public protocol EntityProtocol {
     static var identifier: String { get }
-    func createEntity() -> NSEntityDescription
+    static func createEntity() -> NSEntityDescription
     static func request() -> NSFetchRequest<NSManagedObject>
 }
 

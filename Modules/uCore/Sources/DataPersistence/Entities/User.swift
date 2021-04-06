@@ -12,8 +12,9 @@ final public class User: NSManagedObject, EntityProtocol {
     
     @NSManaged public var id: UUID?
     @NSManaged public var name: String?
+    @NSManaged public var email: String?
     
-    public func createEntity() -> NSEntityDescription {
+    static public func createEntity() -> NSEntityDescription {
         //Entity
         let userEntity = NSEntityDescription()
         userEntity.name = "User"
@@ -28,7 +29,11 @@ final public class User: NSManagedObject, EntityProtocol {
         id.name = "id"
         id.attributeType = .UUIDAttributeType
         
-        userEntity.properties = [id, name]
+        let email = NSAttributeDescription()
+        email.name = "email"
+        email.attributeType = .stringAttributeType
+        
+        userEntity.properties = [id, name, email]
         return userEntity
     }
 }

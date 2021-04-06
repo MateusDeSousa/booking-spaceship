@@ -11,8 +11,8 @@ import CoreData
 public class DatabaseController {
     
     private static var model: NSManagedObjectModel!
-    private static let entitiesClass: [EntityProtocol] = {[
-        User()
+    private static let entitiesClass: [EntityProtocol.Type] = {[
+        User.self
     ]}()
     
     private init() { }

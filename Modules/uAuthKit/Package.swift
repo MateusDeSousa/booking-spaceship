@@ -15,11 +15,17 @@ let package = Package(
             name: "uAuthKit",
             targets: ["uAuthKit"]),
     ],
-    dependencies: [],
+    dependencies: [
+        .package(path: "Modules/uCore"),
+        .package(path: "Modukes/uNetwork")
+    ],
     targets: [
         .target(
             name: "uAuthKit",
-            dependencies: [],
+            dependencies: [
+                .product(name: "uCore", package: "uCore"),
+                .product(name: "uNetwork", package: "uNetwork")
+            ],
             path: "Sources",
             resources: [
                 .process("Resources"),

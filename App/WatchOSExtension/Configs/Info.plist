@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>booking-spaceship WatchKit App</string>
+	<string>booking-spaceship WatchKit Extension</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -20,16 +20,23 @@
 	<string>$(MARKETING_VERSION)</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>CLKComplicationPrincipalClass</key>
+	<string>$(PRODUCT_MODULE_NAME).ComplicationController</string>
+	<key>NSExtension</key>
+	<dict>
+		<key>NSExtensionAttributes</key>
+		<dict>
+			<key>WKAppBundleIdentifier</key>
+			<string>com.mateussousa.booking-spaceship.watchkitapp</string>
+		</dict>
+		<key>NSExtensionPointIdentifier</key>
+		<string>com.apple.watchkit</string>
+	</dict>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
 	<string>We need location access to determine your location</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>We need location access to determine your location</string>
-	<key>UISupportedInterfaceOrientations</key>
-	<array>
-		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationPortraitUpsideDown</string>
-	</array>
-	<key>WKWatchKitApp</key>
-	<true/>
+	<key>WKExtensionDelegateClassName</key>
+	<string>$(PRODUCT_MODULE_NAME).ExtensionDelegate</string>
 </dict>
 </plist>
